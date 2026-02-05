@@ -1,0 +1,11 @@
+C:\Users\New\RiderProjects\IHateDotnet\OrderStore.Core\bin\Debug\net8.0\OrderStore.Core.deps.json
+C:\Users\New\RiderProjects\IHateDotnet\OrderStore.Core\bin\Debug\net8.0\OrderStore.Core.dll
+C:\Users\New\RiderProjects\IHateDotnet\OrderStore.Core\bin\Debug\net8.0\OrderStore.Core.pdb
+C:\Users\New\RiderProjects\IHateDotnet\OrderStore.Core\obj\Debug\net8.0\OrderStore.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\New\RiderProjects\IHateDotnet\OrderStore.Core\obj\Debug\net8.0\OrderStore.Core.AssemblyInfoInputs.cache
+C:\Users\New\RiderProjects\IHateDotnet\OrderStore.Core\obj\Debug\net8.0\OrderStore.Core.AssemblyInfo.cs
+C:\Users\New\RiderProjects\IHateDotnet\OrderStore.Core\obj\Debug\net8.0\OrderStore.Core.csproj.CoreCompileInputs.cache
+C:\Users\New\RiderProjects\IHateDotnet\OrderStore.Core\obj\Debug\net8.0\OrderStore.Core.dll
+C:\Users\New\RiderProjects\IHateDotnet\OrderStore.Core\obj\Debug\net8.0\refint\OrderStore.Core.dll
+C:\Users\New\RiderProjects\IHateDotnet\OrderStore.Core\obj\Debug\net8.0\OrderStore.Core.pdb
+C:\Users\New\RiderProjects\IHateDotnet\OrderStore.Core\obj\Debug\net8.0\ref\OrderStore.Core.dll
