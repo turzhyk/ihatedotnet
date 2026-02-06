@@ -108,3 +108,4 @@ C:\Users\New\RiderProjects\IHateDotnet\IHateDotnet\obj\Debug\net8.0\IHateDotnet.
 C:\Users\New\RiderProjects\IHateDotnet\IHateDotnet\obj\Debug\net8.0\ref\IHateDotnet.dll
 C:\Users\New\RiderProjects\IHateDotnet\IHateDotnet\bin\Debug\net8.0\OrderStore.Application.dll
 C:\Users\New\RiderProjects\IHateDotnet\IHateDotnet\bin\Debug\net8.0\OrderStore.Application.pdb
+C:\Users\New\RiderProjects\IHateDotnet\IHateDotnet\obj\Debug\net8.0\IHateDotnet.sourcelink.json

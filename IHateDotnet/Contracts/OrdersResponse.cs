@@ -4,7 +4,8 @@
         Guid id,
         string Desc,
         decimal Price,
-        string AssignedTo
+        string AssignedTo,
+        DateTime CreatedAt
     );
     
 }
