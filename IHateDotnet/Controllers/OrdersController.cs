@@ -21,14 +21,23 @@ namespace WebApplication1.Controllers
         {
             var orders = await _service.GetAllOrders();
             var response = orders.Select(o =>
-                new OrdersResponse(o.Id, o.Descriprion, o.TotalPrice, o.AssignedTo, o.CreatedAt));
+                new OrdersResponse(
+                    o.Id,
+                    o.Descriprion,
+                    o.TotalPrice,
+                    o.AssignedTo,
+                    o.CreatedAt));
             return Ok(response);
         }
 
         [HttpPost]
         public async Task<ActionResult<Guid>> CreateOrder([FromBody] OrdersRequest request)
         {
-            var (order, error) = Order.Create(Guid.NewGuid(), request.Desc, request.Price, "", DateTime.UtcNow);
+            var (order, error) = Order.Create(
+                Guid.NewGuid(),
+                request.Desc,
+                request.Price, "",
+                DateTime.UtcNow);
             await _service.CreateOrder(order);
             return Ok(order.Id);
         }

@@ -20,7 +20,14 @@ namespace OrderStore.DataAccess.Repos
         public async Task<Order> GetWithId(Guid id)
         {
             var order = await _context.Orders.Where(o => o.Id == id)
-                .Select(o => Order.Create(o.Id, o.Descriprion, o.TotalPrice, o.AssignedTo).Order).FirstOrDefaultAsync();
+                .Select(o => Order.Create(
+                    o.Id,
+                    o.Descriprion,
+                    o.TotalPrice,
+                    o.AssignedTo,
+                    o.CreatedAt
+                ).Order)
+                .FirstOrDefaultAsync();
             if (order != null)
                 return order;
             else
@@ -33,7 +40,14 @@ namespace OrderStore.DataAccess.Repos
         public async Task<List<Order>> GetAll()
         {
             var orderEntities = await _context.Orders.AsNoTracking().ToListAsync();
-            var orders = orderEntities.Select(o => Order.Create(o.Id, o.Descriprion, o.TotalPrice, o.AssignedTo).Order)
+            var orders = orderEntities.Select(
+                    o => Order.Create(
+                        o.Id,
+                        o.Descriprion,
+                        o.TotalPrice,
+                        o.AssignedTo,
+                        o.CreatedAt
+                    ).Order)
                 .ToList();
             return orders;
         }
@@ -45,7 +59,8 @@ namespace OrderStore.DataAccess.Repos
                 Id = order.Id,
                 Descriprion = order.Descriprion,
                 TotalPrice = order.TotalPrice,
-                AssignedTo = order.AssignedTo
+                AssignedTo = order.AssignedTo,
+                CreatedAt = order.CreatedAt
             };
             await _context.Orders.AddAsync(orderEntity);
             await _context.SaveChangesAsync();
@@ -54,10 +69,8 @@ namespace OrderStore.DataAccess.Repos
 
         public async Task Update(Order order)
         {
-            var orderEntity = 
-                await _context.Orders.
-                    Include(o => o.History).
-                    FirstOrDefaultAsync(o => o.Id == order.Id);
+            var orderEntity =
+                await _context.Orders.Include(o => o.History).FirstOrDefaultAsync(o => o.Id == order.Id);
             if (orderEntity == null)
                 throw new Exception("Order not found");
             orderEntity.History.Add(new OrderHistoryElementEntity

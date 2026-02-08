@@ -12,6 +12,7 @@ namespace OrderStore.DataAccess.Configurations
             builder.Property(o => o.Descriprion).IsRequired();
             builder.Property(o => o.TotalPrice).IsRequired();
             builder.Property(o => o.AssignedTo).IsRequired();
+            builder.Property(o => o.CreatedAt).IsRequired();
             builder.HasMany(o => o.History)
                 .WithOne(h => h.Order)
                 .HasForeignKey(h => h.OrderId);

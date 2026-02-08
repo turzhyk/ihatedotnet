@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\New\\RiderProjects\\IHateDotnet\\IHateDotnet\\IHateDotnet.csproj": {}
+    "/Users/ricardo/RiderProjects/ihatedotnet/IHateDotnet/IHateDotnet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\New\\RiderProjects\\IHateDotnet\\IHateDotnet\\IHateDotnet.csproj": {
+    "/Users/ricardo/RiderProjects/ihatedotnet/IHateDotnet/IHateDotnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\IHateDotnet\\IHateDotnet.csproj",
+        "projectUniqueName": "/Users/ricardo/RiderProjects/ihatedotnet/IHateDotnet/IHateDotnet.csproj",
         "projectName": "IHateDotnet",
-        "projectPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\IHateDotnet\\IHateDotnet.csproj",
-        "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\IHateDotnet\\obj\\",
+        "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/IHateDotnet/IHateDotnet.csproj",
+        "packagesPath": "/Users/ricardo/.nuget/packages/",
+        "outputPath": "/Users/ricardo/RiderProjects/ihatedotnet/IHateDotnet/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/ricardo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Application\\OrderStore.Application.csproj": {
-                "projectPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Application\\OrderStore.Application.csproj"
+              "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Application/OrderStore.Application.csproj": {
+                "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Application/OrderStore.Application.csproj"
               },
-              "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.DataAccess\\OrderStore.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.DataAccess\\OrderStore.DataAccess.csproj"
+              "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.DataAccess/OrderStore.DataAccess.csproj": {
+                "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.DataAccess/OrderStore.DataAccess.csproj"
               }
             }
           }
@@ -44,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -80,21 +81,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Application\\OrderStore.Application.csproj": {
+    "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Application/OrderStore.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Application\\OrderStore.Application.csproj",
+        "projectUniqueName": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Application/OrderStore.Application.csproj",
         "projectName": "OrderStore.Application",
-        "projectPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Application\\OrderStore.Application.csproj",
-        "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Application\\obj\\",
+        "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Application/OrderStore.Application.csproj",
+        "packagesPath": "/Users/ricardo/.nuget/packages/",
+        "outputPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/ricardo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -106,8 +107,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Core\\OrderStore.Core.csproj": {
-                "projectPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Core\\OrderStore.Core.csproj"
+              "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Core/OrderStore.Core.csproj": {
+                "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Core/OrderStore.Core.csproj"
               }
             }
           }
@@ -121,7 +122,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -142,21 +144,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Core\\OrderStore.Core.csproj": {
+    "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Core/OrderStore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Core\\OrderStore.Core.csproj",
+        "projectUniqueName": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Core/OrderStore.Core.csproj",
         "projectName": "OrderStore.Core",
-        "projectPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Core\\OrderStore.Core.csproj",
-        "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Core\\obj\\",
+        "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Core/OrderStore.Core.csproj",
+        "packagesPath": "/Users/ricardo/.nuget/packages/",
+        "outputPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/ricardo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -179,7 +181,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -200,21 +203,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.DataAccess\\OrderStore.DataAccess.csproj": {
+    "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.DataAccess/OrderStore.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.DataAccess\\OrderStore.DataAccess.csproj",
+        "projectUniqueName": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.DataAccess/OrderStore.DataAccess.csproj",
         "projectName": "OrderStore.DataAccess",
-        "projectPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.DataAccess\\OrderStore.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.DataAccess\\obj\\",
+        "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.DataAccess/OrderStore.DataAccess.csproj",
+        "packagesPath": "/Users/ricardo/.nuget/packages/",
+        "outputPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.DataAccess/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/ricardo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -226,8 +229,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Core\\OrderStore.Core.csproj": {
-                "projectPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Core\\OrderStore.Core.csproj"
+              "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Core/OrderStore.Core.csproj": {
+                "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Core/OrderStore.Core.csproj"
               }
             }
           }
@@ -241,7 +244,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -278,7 +282,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

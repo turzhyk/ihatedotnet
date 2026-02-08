@@ -26,8 +26,15 @@ builder.Services.AddDbContext<OrderStoreDbContext>(options =>
 builder.Services.AddScoped<IOrdersService, OrdersService > ();
 builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
 var app = builder.Build();
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 app.UseCors();
-app.MapGet("/", () => "Hello World!");
-app.MapControllers();
+// app.MapGet("/", () => "Hello World!");
+app.UseHttpsRedirection();
+app.UseAuthorization();
 
+app.MapControllers();
 app.Run();

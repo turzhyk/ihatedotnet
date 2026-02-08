@@ -1,11 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "4/dDF8/jp2tVxbEuse26BMQWhbDtO/sgYIZQMfW1WMM=",
-  "Source": "IHateDotnet",
-  "BasePath": "_content/IHateDotnet",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
+{"Version":1,"Hash":"tAlNxQdATmr6TTNvQdChvShQThGB9Sv4SdZN82XKJW4=","Source":"IHateDotnet","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
