@@ -21,23 +21,49 @@ namespace WebApplication1.Controllers
         {
             var orders = await _service.GetAllOrders();
             var response = orders.Select(o =>
-                new OrdersResponse(
-                    o.Id,
-                    o.Descriprion,
-                    o.TotalPrice,
-                    o.AssignedTo,
-                    o.CreatedAt));
+                new OrdersResponse{
+                    id = o.Id,
+                    Desc = o.Descriprion,
+                    Price = o.TotalPrice,
+                    Items = o.Items.Select(i => new OrderItemResponse
+                    {
+                        Quantity = i.Quantity,
+                        Type = i.Type,
+                        PricePerUnit = i.PricePerUnit,
+                        Options = i.Options
+                    }).ToList(),
+                    History  = o.History.Select (h => new OrderHistoryElementResponse
+                    {
+                        Status = h.Status,
+                        ChangedAt = h.ChangedAt,
+                        AuthorId = h.AuthorLogin
+                    }).ToList(),
+                    AssignedTo = o.AssignedTo,
+                    CreatedAt = o.CreatedAt
+                    });
             return Ok(response);
         }
 
         [HttpPost]
         public async Task<ActionResult<Guid>> CreateOrder([FromBody] OrdersRequest request)
         {
+            var items = request.Items.Select(i => new OrderItem
+            {
+                Id = Guid.NewGuid(),
+                Quantity = i.Quantity,
+                Type = i.Type,
+                PricePerUnit = i.PricePerUnit,
+                Options = i.Options,
+            }).ToList();
             var (order, error) = Order.Create(
                 Guid.NewGuid(),
                 request.Desc,
-                request.Price, "",
-                DateTime.UtcNow);
+                request.Price,
+                items,
+                "",
+                DateTime.UtcNow,
+                null
+            );
             await _service.CreateOrder(order);
             return Ok(order.Id);
         }
