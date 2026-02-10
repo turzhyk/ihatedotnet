@@ -10,5 +10,10 @@ namespace OrderStore.DataAccess.Repos
         Task<Order> GetWithId(Guid id);
         Task Update(Order order);
         Task<Guid> Update(Guid id, string description, decimal price, string assignedTo);
+
+        Task AssignOrderWithStatus(
+            Guid orderId,
+            string author,
+            OrderHistoryElement historyElement);
     }
 }

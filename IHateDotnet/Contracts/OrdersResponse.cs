@@ -1,4 +1,6 @@
-﻿namespace IHateDotnet.Contracts
+﻿using OrderStore.Core.Models;
+
+namespace IHateDotnet.Contracts
 {
     public class OrdersResponse{
         public Guid id { get; set; }
@@ -7,6 +9,8 @@
         public List<OrderItemResponse> Items { get; set; }
         public string AssignedTo{ get; set; }
         public DateTime CreatedAt{ get; set; }
+        public OrderStatus Status { get; set; }
+        public OrderPaymentStatus PaymentStatus { get; set; }
         public List<OrderHistoryElementResponse> History { get; set; }
 
     };

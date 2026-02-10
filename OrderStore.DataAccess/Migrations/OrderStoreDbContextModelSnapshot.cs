@@ -22,7 +22,38 @@ namespace OrderStore.DataAccess.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("OrderStore.Core.Models.OrderHistoryElementEntity", b =>
+            modelBuilder.Entity("OrderStore.DataAccess.Entities.OrderEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("AssignedTo")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Descriprion")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("PaymentStatus")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("numeric");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("OrderStore.DataAccess.Entities.OrderHistoryElementEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -49,32 +80,36 @@ namespace OrderStore.DataAccess.Migrations
                     b.ToTable("OrderStatusHistories");
                 });
 
-            modelBuilder.Entity("OrderStore.DataAccess.Entities.OrderEntity", b =>
+            modelBuilder.Entity("OrderStore.DataAccess.Entities.OrderItemEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<string>("AssignedTo")
+                    b.Property<string>("Options")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<Guid>("OrderId")
+                        .HasColumnType("uuid");
 
-                    b.Property<string>("Descriprion")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<decimal>("TotalPrice")
+                    b.Property<decimal>("PricePerUnit")
                         .HasColumnType("numeric");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Type")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Orders");
+                    b.HasIndex("OrderId");
+
+                    b.ToTable("OrderItems");
                 });
 
-            modelBuilder.Entity("OrderStore.Core.Models.OrderHistoryElementEntity", b =>
+            modelBuilder.Entity("OrderStore.DataAccess.Entities.OrderHistoryElementEntity", b =>
                 {
                     b.HasOne("OrderStore.DataAccess.Entities.OrderEntity", "Order")
                         .WithMany("History")
@@ -85,9 +120,22 @@ namespace OrderStore.DataAccess.Migrations
                     b.Navigation("Order");
                 });
 
+            modelBuilder.Entity("OrderStore.DataAccess.Entities.OrderItemEntity", b =>
+                {
+                    b.HasOne("OrderStore.DataAccess.Entities.OrderEntity", "Order")
+                        .WithMany("Items")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+                });
+
             modelBuilder.Entity("OrderStore.DataAccess.Entities.OrderEntity", b =>
                 {
                     b.Navigation("History");
+
+                    b.Navigation("Items");
                 });
 #pragma warning restore 612, 618
         }

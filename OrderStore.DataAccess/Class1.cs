@@ -11,6 +11,7 @@ namespace OrderStore.DataAccess
             
         }
         public DbSet<OrderEntity> Orders { get; set; }
+        public DbSet<OrderItemEntity> OrderItems { get; set; }
         public DbSet<OrderHistoryElementEntity> OrderStatusHistories { get; set; }
 
     }

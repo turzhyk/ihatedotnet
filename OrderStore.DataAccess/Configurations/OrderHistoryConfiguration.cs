@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using OrderStore.Core.Models;
+using OrderStore.DataAccess.Entities;
 
 namespace OrderStore.DataAccess.Configurations;
 

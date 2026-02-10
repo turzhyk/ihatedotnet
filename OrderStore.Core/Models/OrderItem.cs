@@ -13,6 +13,5 @@ public class OrderItem
     public int Quantity { get; set; }
     public OrderItemType Type { get; set; }
     public decimal PricePerUnit { get; set; }
-    public decimal TotalPrice { get; set; }
-    public string Opinion { get; set; }
+    public string Options { get; set; }
 }

@@ -6,5 +6,6 @@ namespace OrderStore.Application.Services
     {
         Task<Guid> CreateOrder(Order order);
         Task<List<Order>> GetAllOrders();
+        Task AssignToAsync(Guid orderId, string author);
     }
 }

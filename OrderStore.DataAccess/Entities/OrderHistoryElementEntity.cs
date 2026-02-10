@@ -1,6 +1,6 @@
 ﻿using OrderStore.DataAccess.Entities;
 
-namespace OrderStore.Core.Models;
+namespace OrderStore.DataAccess.Entities;
 
 public class OrderHistoryElementEntity
 {

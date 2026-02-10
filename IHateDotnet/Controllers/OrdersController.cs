@@ -21,7 +21,8 @@ namespace WebApplication1.Controllers
         {
             var orders = await _service.GetAllOrders();
             var response = orders.Select(o =>
-                new OrdersResponse{
+                new OrdersResponse
+                {
                     id = o.Id,
                     Desc = o.Descriprion,
                     Price = o.TotalPrice,
@@ -32,16 +33,24 @@ namespace WebApplication1.Controllers
                         PricePerUnit = i.PricePerUnit,
                         Options = i.Options
                     }).ToList(),
-                    History  = o.History.Select (h => new OrderHistoryElementResponse
+                    History = o.History.Select(h => new OrderHistoryElementResponse
                     {
                         Status = h.Status,
                         ChangedAt = h.ChangedAt,
                         AuthorId = h.AuthorLogin
                     }).ToList(),
                     AssignedTo = o.AssignedTo,
-                    CreatedAt = o.CreatedAt
-                    });
+                    CreatedAt = o.CreatedAt,
+                    Status = o.Status,
+                    PaymentStatus = o.PaymentStatus
+                });
             return Ok(response);
+        }
+        [HttpPost("assign")]
+        public async Task<ActionResult> AssignOrderTo([FromBody] AssignOrderRequest request)
+        {
+            await _service.AssignToAsync(request.OrderId, request.AuthorLogin);
+            return Ok();
         }
 
         [HttpPost]
@@ -62,6 +71,8 @@ namespace WebApplication1.Controllers
                 items,
                 "",
                 DateTime.UtcNow,
+                status: OrderStatus.New,
+                paymentStatus: OrderPaymentStatus.Waiting,
                 null
             );
             await _service.CreateOrder(order);
