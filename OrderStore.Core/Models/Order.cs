@@ -7,18 +7,18 @@ namespace OrderStore.Core.Models
     public enum OrderStatus
     {
         New,
+        InfoNeeded,
         InProgress,
         WaitingForShipping,
-        InfoNeeded,
-        Done,
         InDelivery,
+        Done,
         Cancelled
     }
 
     public enum OrderPaymentStatus
     {
-        Paid,
         Waiting,
+        Paid,
         Cancelled
     }
 

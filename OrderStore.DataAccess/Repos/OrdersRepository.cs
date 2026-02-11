@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OrderStore.Core.Models;
 using OrderStore.DataAccess.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OrderStore.DataAccess.Repos
 {
@@ -19,26 +16,45 @@ namespace OrderStore.DataAccess.Repos
 
         public async Task<Order> GetWithId(Guid id)
         {
-            var order = await _context.Orders.Where(o => o.Id == id)
-                .Select(o => Order.Create(
-                    o.Id,
-                    o.Descriprion,
-                    o.TotalPrice,
-                    null,
-                    o.AssignedTo,
-                    o.CreatedAt,
-                    o.Status,
-                    o.PaymentStatus,
-                    null
-                ).Order)
-                .FirstOrDefaultAsync();
-            if (order != null)
-                return order;
-            else
-            {
+            var orderEntity =
+                await _context.Orders
+                    .AsNoTracking()
+                    .Include(o => o.Items)
+                    .Include(o => o.History)
+                    .Where(x => x.Id == id)
+                    .FirstOrDefaultAsync();
+            if (orderEntity == null)
                 throw new Exception($"Order with id {id} not found");
-                return null;
-            }
+            var items = orderEntity.Items.Select(i => new OrderItem
+            {
+                Id = i.Id,
+                Quantity = i.Quantity,
+                Type = i.Type,
+                PricePerUnit = i.PricePerUnit,
+                Options = i.Options
+            }).ToList();
+            var history = orderEntity.History.Select(h => new OrderHistoryElement
+            {
+                Id = h.Id,
+                Status = h.Status,
+                ChangedAt = h.ChangedAt,
+                AuthorLogin = h.AuthorLogin,
+                OrderId = orderEntity.Id
+            }).ToList();
+            var order = Order.Create(
+                orderEntity.Id,
+                orderEntity.Descriprion,
+                orderEntity.TotalPrice,
+                items,
+                orderEntity.AssignedTo,
+                orderEntity.CreatedAt,
+                orderEntity.Status,
+                orderEntity.PaymentStatus,
+                history
+            ).Order;
+
+
+            return order;
         }
 
         public async Task<List<Order>> GetAll()
@@ -48,6 +64,8 @@ namespace OrderStore.DataAccess.Repos
                     .AsNoTracking()
                     .Include(o => o.Items)
                     .Include(o => o.History)
+                    .Take(30)
+                    .OrderByDescending(x => x.CreatedAt)
                     .ToListAsync();
 
             var orders = orderEntities.Select(o =>
@@ -159,7 +177,6 @@ namespace OrderStore.DataAccess.Repos
                 Status = order.History.Last().Status,
                 AuthorLogin = order.History.Last().AuthorLogin,
                 ChangedAt = order.History.Last().ChangedAt,
-                
             });
             await _context.SaveChangesAsync();
         }

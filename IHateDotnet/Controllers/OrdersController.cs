@@ -16,7 +16,12 @@ namespace WebApplication1.Controllers
             _service = service;
         }
 
-        [HttpGet]
+        // [HttpGet("byId")]
+        // public async Task<ActionResult<OrdersResponse>> GetOrderByIdAsync()
+        // {
+        //     
+        // }
+            [HttpGet]
         public async Task<ActionResult<List<OrdersResponse>>> GetOrdersAsync()
         {
             var orders = await _service.GetAllOrders();
