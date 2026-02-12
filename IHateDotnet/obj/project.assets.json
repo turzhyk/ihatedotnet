@@ -991,6 +991,44 @@
         "runtime": {
           "bin/placeholder/OrderStore.DataAccess.dll": {}
         }
+      },
+      "UserStore.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "UserStore.DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UserStore.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserStore.Application.dll": {}
+        }
+      },
+      "UserStore.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/UserStore.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserStore.Core.dll": {}
+        }
+      },
+      "UserStore.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
+          "UserStore.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UserStore.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserStore.DataAccess.dll": {}
+        }
       }
     }
   },
@@ -2719,6 +2757,21 @@
       "type": "project",
       "path": "../OrderStore.DataAccess/OrderStore.DataAccess.csproj",
       "msbuildProject": "../OrderStore.DataAccess/OrderStore.DataAccess.csproj"
+    },
+    "UserStore.Application/1.0.0": {
+      "type": "project",
+      "path": "../UserStore.Application/UserStore.Application.csproj",
+      "msbuildProject": "../UserStore.Application/UserStore.Application.csproj"
+    },
+    "UserStore.Core/1.0.0": {
+      "type": "project",
+      "path": "../UserStore.Core/UserStore.Core.csproj",
+      "msbuildProject": "../UserStore.Core/UserStore.Core.csproj"
+    },
+    "UserStore.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../UserStore.DataAccess/UserStore.DataAccess.csproj",
+      "msbuildProject": "../UserStore.DataAccess/UserStore.DataAccess.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2726,23 +2779,24 @@
       "Microsoft.EntityFrameworkCore.Design >= 8.0.4",
       "OrderStore.Application >= 1.0.0",
       "OrderStore.DataAccess >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 8.0.0"
+      "Swashbuckle.AspNetCore >= 8.0.0",
+      "UserStore.Application >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\New\\.nuget\\packages\\": {}
+    "/Users/ricardo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\IHateDotnet\\IHateDotnet.csproj",
+      "projectUniqueName": "/Users/ricardo/RiderProjects/ihatedotnet/IHateDotnet/IHateDotnet.csproj",
       "projectName": "IHateDotnet",
-      "projectPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\IHateDotnet\\IHateDotnet.csproj",
-      "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\IHateDotnet\\obj\\",
+      "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/IHateDotnet/IHateDotnet.csproj",
+      "packagesPath": "/Users/ricardo/.nuget/packages/",
+      "outputPath": "/Users/ricardo/RiderProjects/ihatedotnet/IHateDotnet/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/ricardo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2754,11 +2808,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Application\\OrderStore.Application.csproj": {
-              "projectPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.Application\\OrderStore.Application.csproj"
+            "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Application/OrderStore.Application.csproj": {
+              "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Application/OrderStore.Application.csproj"
             },
-            "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.DataAccess\\OrderStore.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\New\\RiderProjects\\IHateDotnet\\OrderStore.DataAccess\\OrderStore.DataAccess.csproj"
+            "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.DataAccess/OrderStore.DataAccess.csproj": {
+              "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.DataAccess/OrderStore.DataAccess.csproj"
+            },
+            "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Application/UserStore.Application.csproj": {
+              "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Application/UserStore.Application.csproj"
             }
           }
         }
@@ -2772,7 +2829,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -2808,7 +2866,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
