@@ -1,0 +1,12 @@
+/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/bin/Debug/net8.0/UserStore.Core.deps.json
+/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/bin/Debug/net8.0/UserStore.Core.dll
+/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/bin/Debug/net8.0/UserStore.Core.pdb
+/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/obj/Debug/net8.0/UserStore.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/obj/Debug/net8.0/UserStore.Core.AssemblyInfoInputs.cache
+/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/obj/Debug/net8.0/UserStore.Core.AssemblyInfo.cs
+/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/obj/Debug/net8.0/UserStore.Core.csproj.CoreCompileInputs.cache
+/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/obj/Debug/net8.0/UserStore.Core.sourcelink.json
+/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/obj/Debug/net8.0/UserStore.Core.dll
+/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/obj/Debug/net8.0/refint/UserStore.Core.dll
+/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/obj/Debug/net8.0/UserStore.Core.pdb
+/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/obj/Debug/net8.0/ref/UserStore.Core.dll

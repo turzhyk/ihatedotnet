@@ -128,7 +128,7 @@ namespace OrderStore.DataAccess.Repos
                 Descriprion = order.Descriprion,
                 TotalPrice = order.TotalPrice,
                 AssignedTo = order.AssignedTo,
-                Items = items,
+                Items = items, 
                 History = history,
                 CreatedAt = order.CreatedAt,
                 PaymentStatus = order.PaymentStatus,

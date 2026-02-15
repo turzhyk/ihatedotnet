@@ -1,7 +1,13 @@
+using IHateDotnet.Utilities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using OrderStore.Application.Services;
 using OrderStore.DataAccess;
 using OrderStore.DataAccess.Repos;
+using UserStore.Application.Services;
+using UserStore.Core.Models;
+using UserStore.DataAccess;
+using UserStore.DataAccess.Repos;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
@@ -23,14 +29,25 @@ builder.Services.AddDbContext<OrderStoreDbContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(OrderStoreDbContext)));
 });
-builder.Services.AddScoped<IOrdersService, OrdersService > ();
+builder.Services.AddDbContext<UserStoreDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(UserStoreDbContext)));
+});
+builder.Services.AddScoped<IOrdersService, OrdersService>();
 builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
+
+builder.Services.AddSingleton<TokenProvider>();
+
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 app.UseCors();
 // app.MapGet("/", () => "Hello World!");
 app.UseHttpsRedirection();

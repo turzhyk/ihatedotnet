@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
 namespace IHateDotnet.Contracts;
-
 public class UserCreateRequest
 {
-    public string Email { get; }
-    public string Password { get; }
+    [Required]
+    [EmailAddress]
+    public string Email { get; set; }
+    [Required ]
+    public string Password { get; set; }
 }
