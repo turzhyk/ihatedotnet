@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "UserStore.Contracts/1.0.0": {
+        "runtime": {
+          "UserStore.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UserStore.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Application/UserStore.Application.csproj": {}
+    "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Application\\UserStore.Application.csproj": {}
   },
   "projects": {
-    "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Application/UserStore.Application.csproj": {
+    "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Application\\UserStore.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Application/UserStore.Application.csproj",
+        "projectUniqueName": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Application\\UserStore.Application.csproj",
         "projectName": "UserStore.Application",
-        "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Application/UserStore.Application.csproj",
-        "packagesPath": "/Users/ricardo/.nuget/packages/",
-        "outputPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Application/obj/",
+        "projectPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Application\\UserStore.Application.csproj",
+        "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ricardo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.DataAccess/UserStore.DataAccess.csproj": {
-                "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.DataAccess/UserStore.DataAccess.csproj"
+              "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Contracts\\UserStore.Contracts.csproj": {
+                "projectPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Contracts\\UserStore.Contracts.csproj"
+              },
+              "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.DataAccess\\UserStore.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.DataAccess\\UserStore.DataAccess.csproj"
               }
             }
           }
@@ -41,8 +44,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -63,21 +65,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/UserStore.Core.csproj": {
+    "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Contracts\\UserStore.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/UserStore.Core.csproj",
-        "projectName": "UserStore.Core",
-        "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/UserStore.Core.csproj",
-        "packagesPath": "/Users/ricardo/.nuget/packages/",
-        "outputPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/obj/",
+        "projectUniqueName": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Contracts\\UserStore.Contracts.csproj",
+        "projectName": "UserStore.Contracts",
+        "projectPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Contracts\\UserStore.Contracts.csproj",
+        "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ricardo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -100,8 +102,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -122,21 +123,79 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.DataAccess/UserStore.DataAccess.csproj": {
+    "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Core\\UserStore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.DataAccess/UserStore.DataAccess.csproj",
-        "projectName": "UserStore.DataAccess",
-        "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.DataAccess/UserStore.DataAccess.csproj",
-        "packagesPath": "/Users/ricardo/.nuget/packages/",
-        "outputPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.DataAccess/obj/",
+        "projectUniqueName": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Core\\UserStore.Core.csproj",
+        "projectName": "UserStore.Core",
+        "projectPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Core\\UserStore.Core.csproj",
+        "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ricardo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.DataAccess\\UserStore.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.DataAccess\\UserStore.DataAccess.csproj",
+        "projectName": "UserStore.DataAccess",
+        "projectPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.DataAccess\\UserStore.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -148,8 +207,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/UserStore.Core.csproj": {
-                "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/UserStore.Core.csproj"
+              "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Core\\UserStore.Core.csproj": {
+                "projectPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Core\\UserStore.Core.csproj"
               }
             }
           }
@@ -163,8 +222,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -201,7 +259,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

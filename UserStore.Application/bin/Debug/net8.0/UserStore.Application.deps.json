@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "UserStore.Application/1.0.0": {
         "dependencies": {
+          "UserStore.Contracts": "1.0.0",
           "UserStore.DataAccess": "1.0.0"
         },
         "runtime": {
@@ -17,6 +18,7 @@
       "Microsoft.EntityFrameworkCore/8.0.4": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "8.0.4",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.4",
           "Microsoft.Extensions.Caching.Memory": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0"
         },
@@ -35,6 +37,7 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.Analyzers/8.0.4": {},
       "Microsoft.EntityFrameworkCore.Relational/8.0.4": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.4",
@@ -172,10 +175,18 @@
           }
         }
       },
+      "UserStore.Contracts/1.0.0": {
+        "runtime": {
+          "UserStore.Contracts.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "UserStore.Core/1.0.0": {
         "runtime": {
           "UserStore.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -188,7 +199,7 @@
         },
         "runtime": {
           "UserStore.DataAccess.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -214,6 +225,13 @@
       "sha512": "sha512-S50pjtPNOvRktacaO6UAhvGCPMT56wxqEq8fQfcjaSUySPGba6mKWo6ackw6DdeAR1cA6U+U0uj27warA2KtJA==",
       "path": "microsoft.entityframeworkcore.abstractions/8.0.4",
       "hashPath": "microsoft.entityframeworkcore.abstractions.8.0.4.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Analyzers/8.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P8hfMZECdbgle4Us8HGRUKAjqVwgbtr5JqtCxqEoiVORrNQAmcpu3g1NKwTAoUsO9Z0QRgExtYoAmdggR/DkMQ==",
+      "path": "microsoft.entityframeworkcore.analyzers/8.0.4",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.8.0.4.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/8.0.4": {
       "type": "package",
@@ -298,6 +316,11 @@
       "sha512": "sha512-/hHd9MqTRVDgIpsToCcxMDxZqla0HAQACiITkq1+L9J2hmHKV6lBAPlauF+dlNSfHpus7rrljWx4nAanKD6qAw==",
       "path": "npgsql.entityframeworkcore.postgresql/8.0.4",
       "hashPath": "npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512"
+    },
+    "UserStore.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "UserStore.Core/1.0.0": {
       "type": "project",

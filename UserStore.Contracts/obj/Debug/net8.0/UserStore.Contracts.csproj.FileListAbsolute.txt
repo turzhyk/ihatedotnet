@@ -1,0 +1,12 @@
+C:\Users\New\RiderProjects\ihatedotnet\UserStore.Contracts\bin\Debug\net8.0\UserStore.Contracts.deps.json
+C:\Users\New\RiderProjects\ihatedotnet\UserStore.Contracts\bin\Debug\net8.0\UserStore.Contracts.dll
+C:\Users\New\RiderProjects\ihatedotnet\UserStore.Contracts\bin\Debug\net8.0\UserStore.Contracts.pdb
+C:\Users\New\RiderProjects\ihatedotnet\UserStore.Contracts\obj\Debug\net8.0\UserStore.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\New\RiderProjects\ihatedotnet\UserStore.Contracts\obj\Debug\net8.0\UserStore.Contracts.AssemblyInfoInputs.cache
+C:\Users\New\RiderProjects\ihatedotnet\UserStore.Contracts\obj\Debug\net8.0\UserStore.Contracts.AssemblyInfo.cs
+C:\Users\New\RiderProjects\ihatedotnet\UserStore.Contracts\obj\Debug\net8.0\UserStore.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\New\RiderProjects\ihatedotnet\UserStore.Contracts\obj\Debug\net8.0\UserStore.Contracts.sourcelink.json
+C:\Users\New\RiderProjects\ihatedotnet\UserStore.Contracts\obj\Debug\net8.0\UserStore.Contracts.dll
+C:\Users\New\RiderProjects\ihatedotnet\UserStore.Contracts\obj\Debug\net8.0\refint\UserStore.Contracts.dll
+C:\Users\New\RiderProjects\ihatedotnet\UserStore.Contracts\obj\Debug\net8.0\UserStore.Contracts.pdb
+C:\Users\New\RiderProjects\ihatedotnet\UserStore.Contracts\obj\Debug\net8.0\ref\UserStore.Contracts.dll

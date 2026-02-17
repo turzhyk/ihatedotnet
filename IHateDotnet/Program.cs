@@ -1,3 +1,4 @@
+using System.Text;
 using IHateDotnet.Utilities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,8 @@ using UserStore.Application.Services;
 using UserStore.Core.Models;
 using UserStore.DataAccess;
 using UserStore.DataAccess.Repos;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
@@ -24,7 +27,19 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod();
     });
 });
-
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = false,
+        ValidateAudience = false,
+        ValidateActor = false,
+        ValidateLifetime = false,
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("5ab418f6-5d62-4ae7-8afe-a38c73c72a1e"))
+    };
+});
+builder.Services.AddAuthorization();
 builder.Services.AddDbContext<OrderStoreDbContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(OrderStoreDbContext)));
@@ -51,6 +66,7 @@ if (app.Environment.IsDevelopment())
 app.UseCors();
 // app.MapGet("/", () => "Hello World!");
 app.UseHttpsRedirection();
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

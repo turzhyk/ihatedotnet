@@ -29,4 +29,25 @@ public class UsersRepository : IUsersRepository
         await _context.SaveChangesAsync();
         return user.Id;
     }
+
+    public async Task<List<UserAdressEntity>> GetAdressesByUserId(Guid id)
+    {
+        var entities = await _context.Adresses.Where(adress => adress.UserId == id).ToListAsync();
+        if (entities == null)
+            throw new Exception($"no address fount for user {id}");
+        return entities;
+        // return entities.Select(entity => new UserAdress(entity.Id, entity.UserId, entity.Country, entity.City, entity.Street,
+        //     entity.BuildingNumber, entity.ApartmentNumber, entity.PostalCode, entity.PhoneNumber, entity.Email,
+        //     entity.Options)).ToList();
+    }
+
+    public async Task AddUserAdress( UserAdress adress)
+    {
+        var entity =  new UserAdressEntity(adress.Id, adress.UserId, adress.Country, adress.City, adress.Street,
+            adress.BuildingNumber, adress.ApartmentNumber, adress.PostalCode, adress.PhoneNumber, adress.Email,
+            adress.Options);
+
+        await _context.Adresses.AddAsync(entity);
+        await _context.SaveChangesAsync();
+    }
 }

@@ -270,6 +270,16 @@
           }
         }
       },
+      "UserStore.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/UserStore.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserStore.Contracts.dll": {}
+        }
+      },
       "UserStore.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -733,6 +743,11 @@
         "postgresql.png"
       ]
     },
+    "UserStore.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../UserStore.Contracts/UserStore.Contracts.csproj",
+      "msbuildProject": "../UserStore.Contracts/UserStore.Contracts.csproj"
+    },
     "UserStore.Core/1.0.0": {
       "type": "project",
       "path": "../UserStore.Core/UserStore.Core.csproj",
@@ -746,23 +761,24 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "UserStore.Contracts >= 1.0.0",
       "UserStore.DataAccess >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "/Users/ricardo/.nuget/packages/": {}
+    "C:\\Users\\New\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Application/UserStore.Application.csproj",
+      "projectUniqueName": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Application\\UserStore.Application.csproj",
       "projectName": "UserStore.Application",
-      "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Application/UserStore.Application.csproj",
-      "packagesPath": "/Users/ricardo/.nuget/packages/",
-      "outputPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Application/obj/",
+      "projectPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Application\\UserStore.Application.csproj",
+      "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ricardo/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -774,8 +790,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.DataAccess/UserStore.DataAccess.csproj": {
-              "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.DataAccess/UserStore.DataAccess.csproj"
+            "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Contracts\\UserStore.Contracts.csproj": {
+              "projectPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Contracts\\UserStore.Contracts.csproj"
+            },
+            "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.DataAccess\\UserStore.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.DataAccess\\UserStore.DataAccess.csproj"
             }
           }
         }
@@ -789,8 +808,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "10.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -811,7 +829,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

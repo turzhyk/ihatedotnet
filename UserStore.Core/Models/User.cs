@@ -15,6 +15,7 @@ namespace UserStore.Core.Models
         public string Email { get; }
         public UserRole Role { get; }
         public DateTime CreatedAt { get; }
+        public List<UserAdress> Adresses { get; }
         
         public User(Guid id, string login, string passwordHash, string email, UserRole role, DateTime createdAt)
         {
