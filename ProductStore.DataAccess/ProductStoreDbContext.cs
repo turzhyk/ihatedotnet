@@ -10,4 +10,6 @@ public class ProductStoreDbContext:DbContext
         
     }
     public DbSet<BusinesscardEntity> Businesscards {get;set;}
+    public DbSet<BusinesscardFinishTypeEntity> BusinesscardCoating { get; set; }
+    public DbSet<BusinesscardPaperTypeEntity> BusinessCardPaper { get; set; }
 }
