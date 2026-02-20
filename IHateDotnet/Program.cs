@@ -11,6 +11,7 @@ using UserStore.DataAccess;
 using UserStore.DataAccess.Repos;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using ProductStore.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
@@ -43,6 +44,10 @@ builder.Services.AddAuthorization();
 builder.Services.AddDbContext<OrderStoreDbContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(OrderStoreDbContext)));
+});
+builder.Services.AddDbContext<ProductStoreDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString(nameof(ProductStoreDbContext)));
 });
 builder.Services.AddDbContext<UserStoreDbContext>(options =>
 {

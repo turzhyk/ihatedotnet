@@ -2317,19 +2317,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\New\\.nuget\\packages\\": {}
+    "/Users/ricardo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\OrderStore.DataAccess\\OrderStore.DataAccess.csproj",
+      "projectUniqueName": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.DataAccess/OrderStore.DataAccess.csproj",
       "projectName": "OrderStore.DataAccess",
-      "projectPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\OrderStore.DataAccess\\OrderStore.DataAccess.csproj",
-      "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\OrderStore.DataAccess\\obj\\",
+      "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.DataAccess/OrderStore.DataAccess.csproj",
+      "packagesPath": "/Users/ricardo/.nuget/packages/",
+      "outputPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.DataAccess/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/ricardo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2341,8 +2341,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\New\\RiderProjects\\ihatedotnet\\OrderStore.Core\\OrderStore.Core.csproj": {
-              "projectPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\OrderStore.Core\\OrderStore.Core.csproj"
+            "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Core/OrderStore.Core.csproj": {
+              "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/OrderStore.Core/OrderStore.Core.csproj"
             }
           }
         }
@@ -2356,7 +2356,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -2393,7 +2394,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
