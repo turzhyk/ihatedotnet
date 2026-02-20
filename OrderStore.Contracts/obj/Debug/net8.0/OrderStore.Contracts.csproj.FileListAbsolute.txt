@@ -1,0 +1,16 @@
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\bin\Debug\net8.0\OrderStore.Contracts.deps.json
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\bin\Debug\net8.0\OrderStore.Contracts.dll
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\bin\Debug\net8.0\OrderStore.Contracts.pdb
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\bin\Debug\net8.0\OrderStore.Core.dll
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\bin\Debug\net8.0\OrderStore.Core.pdb
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\obj\Debug\net8.0\OrderStore.Contracts.csproj.AssemblyReference.cache
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\obj\Debug\net8.0\OrderStore.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\obj\Debug\net8.0\OrderStore.Contracts.AssemblyInfoInputs.cache
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\obj\Debug\net8.0\OrderStore.Contracts.AssemblyInfo.cs
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\obj\Debug\net8.0\OrderStore.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\obj\Debug\net8.0\OrderStore.Contracts.sourcelink.json
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\obj\Debug\net8.0\OrderSto.B42A9DD7.Up2Date
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\obj\Debug\net8.0\OrderStore.Contracts.dll
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\obj\Debug\net8.0\refint\OrderStore.Contracts.dll
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\obj\Debug\net8.0\OrderStore.Contracts.pdb
+C:\Users\New\RiderProjects\ihatedotnet\OrderStore.Contracts\obj\Debug\net8.0\ref\OrderStore.Contracts.dll

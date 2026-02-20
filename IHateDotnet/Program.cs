@@ -23,7 +23,7 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(policy =>
     {
         policy
-            .WithOrigins("http://localhost:5173") // адрес твоего React dev
+            .WithOrigins(["http://localhost:5173","http://localhost:3000" ]) // адрес твоего React dev
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
@@ -55,6 +55,7 @@ builder.Services.AddDbContext<UserStoreDbContext>(options =>
 });
 builder.Services.AddScoped<IOrdersService, OrdersService>();
 builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
+builder.Services.AddScoped<IPriceCalcService, PriceCalcService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUsersRepository, UsersRepository>();
 builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();

@@ -1,6 +1,7 @@
 ﻿using IHateDotnet.Contracts;
 using Microsoft.AspNetCore.Mvc;
 using OrderStore.Application.Services;
+using OrderStore.Contracts;
 using OrderStore.Core.Models;
 
 namespace WebApplication1.Controllers
@@ -10,10 +11,12 @@ namespace WebApplication1.Controllers
     public class OrdersController : ControllerBase
     {
         private readonly IOrdersService _service;
+        private readonly IPriceCalcService _priceCalcService;
 
-        public OrdersController(IOrdersService service)
+        public OrdersController(IOrdersService service, IPriceCalcService priceCalcService)
         {
             _service = service;
+            _priceCalcService = priceCalcService;
         }
 
         // [HttpGet("byId")]
@@ -21,7 +24,7 @@ namespace WebApplication1.Controllers
         // {
         //     
         // }
-            [HttpGet]
+        [HttpGet]
         public async Task<ActionResult<List<OrdersResponse>>> GetOrdersAsync()
         {
             var orders = await _service.GetAllOrders();
@@ -35,7 +38,6 @@ namespace WebApplication1.Controllers
                     {
                         Quantity = i.Quantity,
                         Type = i.Type,
-                        PricePerUnit = i.PricePerUnit,
                         Options = i.Options
                     }).ToList(),
                     History = o.History.Select(h => new OrderHistoryElementResponse
@@ -51,6 +53,7 @@ namespace WebApplication1.Controllers
                 });
             return Ok(response);
         }
+
         [HttpPost("assign")]
         public async Task<ActionResult> AssignOrderTo([FromBody] AssignOrderRequest request)
         {
@@ -58,6 +61,11 @@ namespace WebApplication1.Controllers
             return Ok();
         }
 
+        [HttpPost("price")]
+        public async Task<ActionResult<PriceResultDto>> GetPricePerUnit([FromBody] GetPriceDto request)
+        {
+           return  await _priceCalcService.CalculatePrice(request);
+        }
         [HttpPost]
         public async Task<ActionResult<Guid>> CreateOrder([FromBody] OrdersRequest request)
         {
@@ -66,7 +74,6 @@ namespace WebApplication1.Controllers
                 Id = Guid.NewGuid(),
                 Quantity = i.Quantity,
                 Type = i.Type,
-                PricePerUnit = i.PricePerUnit,
                 Options = i.Options,
             }).ToList();
             var (order, error) = Order.Create(

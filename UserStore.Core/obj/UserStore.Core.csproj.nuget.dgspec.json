@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/UserStore.Core.csproj": {}
+    "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Core\\UserStore.Core.csproj": {}
   },
   "projects": {
-    "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/UserStore.Core.csproj": {
+    "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Core\\UserStore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/UserStore.Core.csproj",
+        "projectUniqueName": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Core\\UserStore.Core.csproj",
         "projectName": "UserStore.Core",
-        "projectPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/UserStore.Core.csproj",
-        "packagesPath": "/Users/ricardo/.nuget/packages/",
-        "outputPath": "/Users/ricardo/RiderProjects/ihatedotnet/UserStore.Core/obj/",
+        "projectPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Core\\UserStore.Core.csproj",
+        "packagesPath": "C:\\Users\\New\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\New\\RiderProjects\\ihatedotnet\\UserStore.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ricardo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\New\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -37,8 +37,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -59,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

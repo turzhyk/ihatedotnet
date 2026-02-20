@@ -30,7 +30,6 @@ namespace OrderStore.DataAccess.Repos
                 Id = i.Id,
                 Quantity = i.Quantity,
                 Type = i.Type,
-                PricePerUnit = i.PricePerUnit,
                 Options = i.Options
             }).ToList();
             var history = orderEntity.History.Select(h => new OrderHistoryElement
@@ -75,7 +74,6 @@ namespace OrderStore.DataAccess.Repos
                         Id = i.Id,
                         Quantity = i.Quantity,
                         Type = i.Type,
-                        PricePerUnit = i.PricePerUnit,
                         Options = i.Options
                     }).ToList();
                     var history = o.History.Select(h => new OrderHistoryElement
@@ -119,7 +117,6 @@ namespace OrderStore.DataAccess.Repos
                 Id = i.Id,
                 Quantity = i.Quantity,
                 Type = i.Type,
-                PricePerUnit = i.PricePerUnit,
                 Options = i.Options,
             }).ToList();
             var orderEntity = new OrderEntity
